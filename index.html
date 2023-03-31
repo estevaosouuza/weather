@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="select">
+            <label for="regiao">Selecione uma região:</label>
+            <select id="regiao">
+                <option value="">Selecione...</option>
+            </select>
+
+            <select id="cidades">
+                <option readyonly>Selecione a cidade</option>
+            </select>
+        </div>
+
+        <div id="weather"></div>
+        <div id="fase"></div>
+    </div>
+
+    <script src="assets/js/api-cidades.js"></script>
+    <script src="assets/js/api-geolocation.js"></script>
+    <script src="assets/js/api-clima.js"></script>
+    <script src="assets/js/api-fase-lua.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
